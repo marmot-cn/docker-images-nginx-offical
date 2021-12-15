@@ -3,7 +3,7 @@
 FROM nginx:1.21.4
 MAINTAINER chloroplast "41893204@qq.com"
 
-ADD ./conf/nginx.conf   /etc/nginx/nginx.conf
+ADD ./nginx.conf   /etc/nginx/nginx.conf
 
 RUN set -ex \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
